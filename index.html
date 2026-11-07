@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>代理店のよくある質問 | MK2</title>
+<!-- MK2 代理店向けのよくある質問。元：Addness ナレッジ「MK2の代理店からの問い合わせ（振込・退会・会費・明細）に答える」（2026-11-06 決定） -->
+<style>
+  :root{ --navy:#06101f; --navy2:#1d3a7a; --teal:#5ee6dc; --blue:#8fb4ff; --bg:#f4f6fb; --card:#fff; --ink:#1b2333; --muted:#5d6575; --line:#dde3ee; --mark:#fff1b8; }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font-family:-apple-system,BlinkMacSystemFont,"Hiragino Sans","Noto Sans JP",sans-serif;font-size:16px;line-height:1.75}
+  header{color:#fff;padding:28px 16px 22px;background:radial-gradient(700px 400px at 10% -20%,#1d3a7a 0%,transparent 60%),radial-gradient(600px 400px at 100% 130%,#0f5a63 0%,transparent 60%),var(--navy)}
+  header .in,main{max-width:760px;margin:0 auto}
+  .en{font-size:12px;font-weight:700;letter-spacing:.16em;color:var(--teal);margin:0 0 4px}
+  h1{font-size:24px;margin:0;line-height:1.35}
+  .lead{color:#c4cde0;font-size:14px;margin:8px 0 0}
+  .search{margin-top:16px;position:relative}
+  .search input{width:100%;font:inherit;font-size:16px;padding:12px 14px 12px 40px;border-radius:12px;border:0;outline:none;background:#fff;color:var(--ink)}
+  .search svg{position:absolute;left:12px;top:50%;transform:translateY(-50%);width:20px;height:20px;stroke:#7a8496;fill:none;stroke-width:2}
+  nav{display:flex;gap:8px;overflow-x:auto;padding:14px 16px 4px;max-width:760px;margin:0 auto;scrollbar-width:none}
+  nav a{flex:none;text-decoration:none;color:var(--navy2);background:#fff;border:1px solid var(--line);border-radius:999px;padding:6px 14px;font-size:14px;font-weight:600}
+  main{padding:4px 16px 48px}
+  h2{font-size:18px;margin:26px 0 10px;padding-left:10px;border-left:4px solid var(--teal);scroll-margin-top:12px}
+  details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:8px}
+  summary{cursor:pointer;list-style:none;padding:14px 40px 14px 44px;position:relative;font-weight:600}
+  summary::-webkit-details-marker{display:none}
+  summary::before{content:"Q";position:absolute;left:14px;top:13px;width:22px;height:22px;border-radius:6px;background:var(--navy2);color:#fff;font-size:13px;display:grid;place-items:center}
+  summary::after{content:"";position:absolute;right:16px;top:20px;width:9px;height:9px;border-right:2px solid #8a93a6;border-bottom:2px solid #8a93a6;transform:rotate(45deg);transition:transform .15s}
+  details[open] summary::after{transform:rotate(-135deg);top:24px}
+  .a{padding:0 16px 14px 44px;position:relative}
+  .a::before{content:"A";position:absolute;left:14px;top:2px;width:22px;height:22px;border-radius:6px;background:var(--teal);color:var(--navy);font-size:13px;font-weight:700;display:grid;place-items:center}
+  .a p{margin:0 0 8px} .a ul{margin:0 0 8px;padding-left:1.2em} .a li{margin-bottom:4px}
+  mark{background:linear-gradient(transparent 55%,var(--mark) 55%);color:inherit;font-weight:700}
+  a{color:#1f5fd1}
+  .ex{background:#f2f5fa;border-radius:8px;padding:8px 12px;font-size:14px}
+  .none{display:none;text-align:center;color:var(--muted);padding:24px 0}
+  .help{margin-top:32px;background:var(--navy);color:#fff;border-radius:14px;padding:18px 18px}
+  .help h3{margin:0 0 6px;font-size:16px} .help p{margin:0;color:#c4cde0;font-size:14px}
+  .talk{display:inline-flex;align-items:center;gap:8px;margin-top:12px;text-decoration:none;font-weight:700;font-size:15px;color:#fff;background:#06c755;border-radius:999px;padding:10px 18px}
+  .talk svg{width:18px;height:18px;fill:#fff}
+  .toptalk{margin-top:12px;font-size:13px;color:#c4cde0}
+  .toptalk a{color:#fff;font-weight:700}
+  footer{text-align:center;color:var(--muted);font-size:12px;padding:0 16px 28px}
+</style>
+</head>
+<body>
+<header><div class="in">
+  <p class="en">FAQ</p>
+  <h1>代理店のよくある質問</h1>
+  <p class="lead">お問い合わせの多いご質問をまとめました。知りたいことを入れて探せます。</p>
+  <p class="toptalk">すぐに担当者へ相談したい方は <a href="https://line.me/R/oaMessage/@904knxqb/">LINEで相談する ›</a></p>
+  <label class="search"><svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="7"/><path d="M20 20l-4-4"/></svg><input id="q" type="search" placeholder="例：解約、カード、振込、明細" aria-label="質問を探す"></label>
+</div></header>
+<nav aria-label="分類">
+  <a href="#pay">コミッションの振込</a><a href="#quit">解約・退会</a><a href="#fee">会費（サブスク）</a><a href="#statement">明細・レベル</a>
+</nav>
+<main>
+  <section id="pay">
+    <h2>コミッションの振込・受け取り</h2>
+    <details><summary>コミッションはいつ振り込まれますか？</summary><div class="a">
+      <p>実績月の<mark>翌々月末〜10日以内</mark>にお振込みします。</p>
+      <p class="ex">例：6月の実績 → 8月末〜9月10日ごろ</p>
+      <p>新規のご契約は、申込月の1日〜翌月20日までの決済が、まとめて「申込月の実績」になります。</p></div></details>
+    <details><summary>コミッションを受け取るには、何が必要ですか？</summary><div class="a">
+      <p>次の3つが<mark>すべて</mark>そろうと、お支払いします。</p>
+      <ul><li>ご本人名義の、日本以外の海外口座を作り、<a href="https://forms.gle/rxvShvU68gZNyB7J6">海外口座の登録フォーム</a>から登録する</li>
+      <li>代理店に登録した月から2か月以内に、<a href="https://script.google.com/macros/s/AKfycbyxqf7odRYbx762Qyge161IGpPKzbIFVvikG4J1LtjRCBgB144k3zaFun-6v4H4PGRm/exec?p=agent">スタートアップ研修</a>に参加する</li>
+      <li>毎月26日のサブスク会費を払う</li></ul></div></details>
+    <details><summary>明細の「保留」とは何ですか？保留の分はいつ振り込まれますか？</summary><div class="a">
+      <p>上の3つがそろうまで、コミッションはお振込みせずにお預かりします（保留）。保留の金額は、翌月以降の明細に「繰越」として載ります。3つがそろった月に、その月の分とあわせてお振込みします。</p>
+      <p>保留は<mark>最長6か月</mark>です。6か月を過ぎた分は受け取れなくなりますので、口座の登録と研修への参加はお早めにお願いします。</p></div></details>
+    <details><summary>スタートアップ研修に出たのに、保留のままです</summary><div class="a">
+      <p>研修への参加は、お申込みの記録で確認しています。お申込みのときに届いた確認メールの画面写真を、公式LINEへお送りください。確認でき次第、保留を外します。</p></div></details>
+    <details><summary>日本の銀行の口座（外貨預金を含む）や Wise で受け取れますか？</summary><div class="a">
+      <p>受け取れません。<mark>ご本人名義の、日本以外の海外口座</mark>が必要です。日本の銀行の口座や、Wise などの送金サービスの口座には振り込めません。</p></div></details>
+    <details><summary>自分の口座がないので、紹介者など別の方の口座に振り込んでほしい</summary><div class="a">
+      <p>できません。コミッションは<mark>ご本人名義の海外口座</mark>にだけお振込みします。紹介者やご家族など、ほかの方の口座には振り込めません。</p>
+      <p>口座ができるまでの分は保留としてお預かりし、ご本人の口座を登録した月にまとめてお振込みします（保留は最長6か月です）。</p></div></details>
+    <details><summary>送金の手数料や上限はありますか？</summary><div class="a">
+      <p>1回の送金につき、手数料<mark>50ドル</mark>を引いた金額をお振込みします。1か月に送れる金額に上限があることがあり、上限は代理店ごとにちがいます。上限を超えるときは、こちらから個別にご案内します。</p></div></details>
+    <details><summary>振り込まれた金額が、明細と合いません</summary><div class="a">
+      <p>まず各月の明細の「保留」「繰越」「支払状況」と、送金手数料50ドルをご確認ください。それでも合わないときは、明細の画面写真と口座の入金記録を公式LINEへお送りください。</p></div></details>
+  </section>
+
+  <section id="quit">
+    <h2>解約・退会・サブスクの停止</h2>
+    <details><summary>代理店を辞めたい／サブスクを止めたい</summary><div class="a">
+      <p>サブスクだけを止めることはできません。サブスクを止めると、<mark>代理店の解約</mark>になります。</p>
+      <p>解約するときは、公式LINEに「<b>代理店を解約します</b>」と、代理店コード・お名前を送ってください。それだけで手続きできます。</p></div></details>
+    <details><summary>解約すると、いつ止まりますか？</summary><div class="a">
+      <p><mark>月末締め</mark>です。お申し出の月の26日の決済が最後で、代理店は翌月の末日に失効します。</p>
+      <p class="ex">例：10月15日にお申し出 → 10月26日の決済が最後 → 11月30日に失効（11月26日の決済はありません）</p></div></details>
+    <details><summary>解約を伝えたのに、引き落とされました</summary><div class="a">
+      <p>月末締めのため、お申し出の月の26日の決済まではかかります。翌月以降も引き落とされたときは、公式LINEへご連絡ください。</p></div></details>
+    <details><summary>解約したあと、紹介した方の契約やポイントはどうなりますか？</summary><div class="a">
+      <p>失効したあとは、ご自身にコミッションは出ません。決まりどおり上位の代理店に移り、移り先を指定することはできません。ポジション・累計ポイントなどのデータは消え、あとで登録し直しても引き継げません。</p></div></details>
+  </section>
+
+  <section id="fee">
+    <h2>会費（サブスク）の支払い</h2>
+    <details><summary>会費はいくらで、いつ払いますか？</summary><div class="a">
+      <p>月払いは<mark>毎月2,200円</mark>（税込）で、毎月26日にカードで決済します。年払いは26,400円で、1年後の同じ月の26日に決済します。</p></div></details>
+    <details><summary>引き落としができませんでした（決済に失敗した）</summary><div class="a">
+      <p>公式LINEに届く決済URLからお支払いください。反映まで1日ほどかかります。</p>
+      <p>お支払いの期限は<mark>翌月5日</mark>です。6日になってもお支払いがないと代理店登録が失効し、コミッション・ポイントが出なくなり、マイページも見られなくなります。データは引き継げません。</p></div></details>
+    <details><summary>カードを変えたい／カードをなくした</summary><div class="a">
+      <p>公式LINEに「カードを変えたい」と送ってください。ご登録のメールアドレスに、決済方法を変えるURLをお送りします。</p></div></details>
+    <details><summary>払ったら「決済しました」と連絡したほうがいいですか？</summary><div class="a">
+      <p><mark>ご連絡は不要</mark>です。決済は自動で確認し、1日ほどで反映します。2日たっても反映されないときだけ、公式LINEへご連絡ください。</p></div></details>
+    <details><summary>期限を過ぎてしまいました</summary><div class="a">
+      <p>期限を過ぎた請求はお支払いいただけません（コンビニ決済もできません）。次の26日の決済から再開できますが、払っていなかった間のコミッションは出ません。それまでのデータも引き継げません。</p></div></details>
+  </section>
+
+  <section id="statement">
+    <h2>明細・レベル</h2>
+    <details><summary>明細や自分の組織は、どこで見られますか？</summary><div class="a">
+      <p>明細は<a href="https://mk2andpartners.com/">マイページ</a>で見られます（右上の三本線 → コミッション明細）。下の代理店やご契約は<a href="https://smk2project-ai.github.io/org/">組織管理</a>で見られます。</p>
+      <p>代理店コードを複数お持ちのときは、コードを切り替えると、それぞれの明細が見られます。</p></div></details>
+    <details><summary>明細はいつ更新されますか？</summary><div class="a">
+      <p>毎月<mark>25日ごろ</mark>にマイページへ反映します。25日を過ぎても出ないときは、マイページを開き直してください。それでも出ないときは、公式LINEへご連絡ください。</p></div></details>
+    <details><summary>ある月の明細に、ご契約が載っていません</summary><div class="a">
+      <p>次のどれかにあてはまることが多く、お支払いのもれではありません。</p>
+      <ul><li>新規の月は、翌月20日までの決済を先に計上します。そのため、次の月の明細に載らないことがあります（ひと月早く払い済みです）</li>
+      <li>月末の決済が土日にあたると、翌月の実績にずれます</li>
+      <li>紹介した方のサブスクが有効でない期間の分は、上位の代理店に移ります</li></ul></div></details>
+    <details><summary>自分が紹介した方が、明細に載っていません</summary><div class="a">
+      <p>ご契約のときの紹介者の登録がちがっている可能性があります。契約者のお名前と、お申込みのおおよその時期を公式LINEへお送りください。確認して紹介者を直したときは、直した月のお支払いから反映します。それより前の分を、さかのぼってお支払いすることはできません。</p></div></details>
+    <details><summary>レベルがちがう／レベルを変えてほしい</summary><div class="a">
+      <p>レベルは累計ポイントで決まります。レベルの変更は、上位の代理店からのお申し出か、上位の代理店が確認済みのときにお受けします。上位の代理店から、代理店コード・お名前・「今のレベル → 変えたいレベル」を公式LINEへお送りください。</p>
+      <p>レベルが上がっても、継続中のご契約はご契約当時のレベルの％のままです。上がったレベルの％は、そのあとの新規のご契約から使います。</p></div></details>
+  </section>
+
+  <p class="none" id="none">見つかりませんでした。ほかの言葉で探すか、公式LINEへお問い合わせください。</p>
+
+  <div class="help">
+    <h3>ここで解決しないときは</h3>
+    <p>代理店サポートの公式LINEに、代理店コード・お名前と、ご質問の内容を送ってください。</p>
+    <a class="talk" href="https://line.me/R/oaMessage/@904knxqb/"><svg viewBox="0 0 24 24"><path d="M12 3C6.5 3 2 6.6 2 11c0 2.5 1.4 4.7 3.7 6.1L5 21l4-2.2c1 .2 2 .3 3 .3 5.5 0 10-3.6 10-8S17.5 3 12 3z"/></svg>LINEで担当者に相談する</a>
+  </div>
+</main>
+<footer>MK2 代理店サポート</footer>
+<script>
+(function(){
+  var q=document.getElementById('q'), items=[].slice.call(document.querySelectorAll('details')), secs=[].slice.call(document.querySelectorAll('main section')), none=document.getElementById('none');
+  q.addEventListener('input',function(){
+    var w=q.value.trim().toLowerCase().split(/\s+/).filter(Boolean), hit=0;
+    items.forEach(function(d){ var t=d.textContent.toLowerCase(); var ok=w.every(function(x){return t.indexOf(x)>=0;}); d.style.display=ok?'':'none'; d.open=!!(w.length&&ok); if(ok)hit++; });
+    secs.forEach(function(s){ s.style.display=[].some.call(s.querySelectorAll('details'),function(d){return d.style.display!=='none';})?'':'none'; });
+    none.style.display=hit?'none':'block';
+  });
+})();
+</script>
+</body>
+</html>
